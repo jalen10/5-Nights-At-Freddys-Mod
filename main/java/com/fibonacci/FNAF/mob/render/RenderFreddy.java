@@ -13,7 +13,7 @@ import net.minecraft.util.ResourceLocation;
  */
 public class RenderFreddy extends RenderLiving{
 
-    private static ResourceLocation EntityTexture = new ResourceLocation("MiscCraft:textures/mobs/Freddy.png");
+    private static ResourceLocation EntityTexture = new ResourceLocation("FNAF:textures/mobs/Freddy.png");
     protected Freddy model;
     public RenderFreddy(ModelBase modelBase, float f) {
         super(modelBase, f);
