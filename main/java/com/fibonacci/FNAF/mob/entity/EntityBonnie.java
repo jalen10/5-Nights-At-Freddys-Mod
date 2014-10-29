@@ -1,17 +1,15 @@
 package com.fibonacci.FNAF.mob.entity;
 
-import com.fibonacci.FNAF.common.FNAF;
 import net.minecraft.block.Block;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.monster.EntityMob;
-import net.minecraft.item.Item;
 import net.minecraft.world.World;
 
 /**
  * Created by Fibonacci on 10/28/14.
  */
-public class EntityFreddy extends EntityMob{
-    public EntityFreddy(World world) {
+public class EntityBonnie extends EntityMob{
+    public EntityBonnie(World world) {
         super(world);
         this.setSize(.5F, 2.1F);
     }
@@ -45,18 +43,19 @@ public class EntityFreddy extends EntityMob{
 
 
 
-    protected Item getDropItem()
-    {
-        return FNAF.Microphone;
-    }
-    protected void addRandomArmor()
-    {
-//        this.setCurrentItemOrArmor(0, new ItemStack(MiscCraft.RubySword));
-//        this.setCurrentItemOrArmor(0, new ItemStack(MiscCraft.RubyChestplate));
-
-    }
-    protected void dropRareDrop(int par1)
-    {
-        this.dropItem(FNAF.Microphone, 1);
-    }
+//    protected Item getDropItem()
+//    {
+//        return FNAF.Microphone;
+//    }
+//    protected void addRandomArmor()
+//    {
+////        this.setCurrentItemOrArmor(0, new ItemStack(MiscCraft.RubySword));
+////        this.setCurrentItemOrArmor(0, new ItemStack(MiscCraft.RubyChestplate));
+//
+//    }
+//    protected void dropRareDrop(int par1)
+//    {
+//        this.dropItem(FNAF.Microphone, 1);
+//    }
 }
+

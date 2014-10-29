@@ -1,6 +1,9 @@
 package com.fibonacci.FNAF.common;
 
 import com.fibonacci.FNAF.block.InvisibleBlock;
+import com.fibonacci.FNAF.mob.entity.EntityBonnie;
+import com.fibonacci.FNAF.mob.entity.EntityChica;
+import com.fibonacci.FNAF.mob.entity.EntityFoxie;
 import com.fibonacci.FNAF.mob.entity.EntityFreddy;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
@@ -42,12 +45,30 @@ public class FNAF {
     public FNAF(){
         GameRegistry.registerBlock(InvisibleBlock, "InvisibleBlock");
         GameRegistry.registerItem(Microphone, "Microphone");
-
+        //Freddy
         EntityRegistry.findGlobalUniqueEntityId();
         EntityRegistry.registerGlobalEntityID(EntityFreddy.class, "Freddy", EntityRegistry.findGlobalUniqueEntityId());
         EntityRegistry.addSpawn(EntityFreddy.class, 20, 5, 15, EnumCreatureType.creature,BiomeGenBase.plains);
         EntityRegistry.findGlobalUniqueEntityId();
         registerEntityEgg(EntityFreddy.class, 0x9900FF, 0xFFFFFF);
+        //Foxie
+        EntityRegistry.findGlobalUniqueEntityId();
+        EntityRegistry.registerGlobalEntityID(EntityFoxie.class, "Foxie", EntityRegistry.findGlobalUniqueEntityId());
+        EntityRegistry.addSpawn(EntityFoxie.class, 20, 5, 15, EnumCreatureType.creature,BiomeGenBase.plains);
+        EntityRegistry.findGlobalUniqueEntityId();
+        registerEntityEgg(EntityFoxie.class, 0x9900FF, 0xFFFFFF);
+        //Bonnie
+        EntityRegistry.findGlobalUniqueEntityId();
+        EntityRegistry.registerGlobalEntityID(EntityBonnie.class, "Bonnie", EntityRegistry.findGlobalUniqueEntityId());
+        EntityRegistry.addSpawn(EntityBonnie.class, 20, 5, 15, EnumCreatureType.creature,BiomeGenBase.plains);
+        EntityRegistry.findGlobalUniqueEntityId();
+        registerEntityEgg(EntityBonnie.class, 0x9900FF, 0xFFFFFF);
+        //Chica
+        EntityRegistry.findGlobalUniqueEntityId();
+        EntityRegistry.registerGlobalEntityID(EntityChica.class, "Chica", EntityRegistry.findGlobalUniqueEntityId());
+        EntityRegistry.addSpawn(EntityChica.class, 20, 5, 15, EnumCreatureType.creature,BiomeGenBase.plains);
+        EntityRegistry.findGlobalUniqueEntityId();
+        registerEntityEgg(EntityChica.class, 0x9900FF, 0xFFFFFF);
 
 
     }
